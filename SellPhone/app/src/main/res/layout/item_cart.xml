@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgproduct_cartitem"
+            android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtprductname_cartitem"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtprice_cartitem"
+            android:textColor="#ff00"
+            android:text="Product Price"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnminus_cartitem"
+                android:focusable="false"
+                android:text="-"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@null"
+                android:id="@+id/btntotal_cartitem"
+                android:focusable="false"
+                android:text="1"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnplus_cartitem"
+                android:focusable="false"
+                android:text="+"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
